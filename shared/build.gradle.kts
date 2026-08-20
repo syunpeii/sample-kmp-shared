@@ -10,7 +10,7 @@ plugins {
 }
 
 group = "com.example.samplekmpshared"
-version = "1.0.0"
+version = "1.1.0"
 
 kotlin {
     val xcFramework = XCFramework("Shared")

@@ -1,5 +1,6 @@
 package com.example.samplekmpshared.component.navigation
 
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import com.example.samplekmpshared.preview.ComponentPreview
@@ -12,6 +13,7 @@ fun AppTopAppBar(
     title: String,
     showBackButton: Boolean,
     onBackClick: () -> Unit,
+    windowInsets: WindowInsets = TopAppBarDefaults.windowInsets,
 ) {
     TopAppBar(
         title = {
@@ -30,6 +32,7 @@ fun AppTopAppBar(
                 }
             }
         },
+        windowInsets = windowInsets,
         colors = TopAppBarDefaults.topAppBarColors(
             containerColor = SampleTheme.colorScheme.surface,
             titleContentColor = SampleTheme.colorScheme.onSurface

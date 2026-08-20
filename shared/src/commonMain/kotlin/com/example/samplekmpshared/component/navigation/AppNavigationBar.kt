@@ -1,5 +1,6 @@
 package com.example.samplekmpshared.component.navigation
 
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import com.example.samplekmpshared.preview.ComponentPreview
@@ -11,10 +12,12 @@ import com.example.samplekmpshared.theme.AppTheme
 fun AppNavigationBar(
     selectedTab: AppTab,
     onTabSelected: (AppTab) -> Unit,
+    windowInsets: WindowInsets = NavigationBarDefaults.windowInsets,
 ) {
     NavigationBar(
         containerColor = SampleTheme.colorScheme.surface,
-        contentColor = SampleTheme.colorScheme.onSurface
+        contentColor = SampleTheme.colorScheme.onSurface,
+        windowInsets = windowInsets
     ) {
         AppTab.entries.forEach { tab ->
             NavigationBarItem(
