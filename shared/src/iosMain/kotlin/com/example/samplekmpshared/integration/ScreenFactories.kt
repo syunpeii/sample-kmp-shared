@@ -8,6 +8,7 @@ import com.example.samplekmpshared.screen.HomeScreen
 import com.example.samplekmpshared.theme.AppTheme
 import platform.UIKit.UIViewController
 
+@Suppress("UNUSED")
 object ScreenFactories {
     fun createHomeScreen(
         onNavigateToDetail: () -> Unit,
