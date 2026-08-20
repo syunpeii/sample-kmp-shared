@@ -1,4 +1,4 @@
-rootProject.name = "Samplekmpshared"
+rootProject.name = "sample-kmp-shared"
 
 pluginManagement {
     repositories {
